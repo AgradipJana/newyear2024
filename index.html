@@ -71,30 +71,6 @@
       z-index: 0;
     }
 
-    #animationContainer {
-      display: none;
-      text-align: center;
-      position: absolute;
-      left: 37vw;
-      top: 62vh;
-      margin: 5px 0;
-    }
-
-    .happy-new-year {
-      font-size: 3em;
-      font-weight: bold;
-      color: #ffffff;
-      font-family: 'Lexend', sans-serif;
-    }
-
-    .wish {
-      position: absolute;
-      top: 74vh;
-      left: 33vw;
-      color: white;
-      font-family: 'Yanone Kaffeesatz', sans-serif;
-      text-align: center;
-    }
 
     .agradip {
       position: absolute;
@@ -106,29 +82,16 @@
       width: 10vw;
     }
 
-    .agradipjana {
+    .newyear {
+      width: 100vw;
+      height: 100vh;
       position: absolute;
-      top: 90vh;
-      right: 3vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .agradipjana img {
-      width: 4vw;
-      border-radius: 5px;
-    }
-
-    .agradipjana img:hover {
-      transform: rotate(10deg);
-      animation-duration: 1s;
-    }
-
-    .admin {
-      position: absolute;
-      top: 0vh;
-      left: 33vw;
-    }
-
-    .admin img {
+    .newyear img {
       width: 35vw;
       animation: happyNewYearAnimation 2s infinite;
     }
@@ -147,6 +110,53 @@
       }
     }
 
+    #animationContainer {
+      display: none;
+      text-align: center;
+      position: absolute;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      top: 72vh;
+      margin: 5px 0;
+    }
+
+    .happy-new-year {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ffffff;
+      font-family: 'Lexend', sans-serif;
+    }
+
+    .wish {
+      position: absolute;
+      top: 84vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      text-align: center;
+    }
+
+
+    .agradipjana {
+      position: absolute;
+      top: 90vh;
+      right: 3vw;
+    }
+
+    .agradipjana img {
+      width: 4vw;
+      border-radius: 5px;
+    }
+
+    .agradipjana img:hover {
+      transform: rotate(10deg);
+      animation-duration: 1s;
+    }
+
+    /* 
     @media screen and (max-width:320px) {
       #popupForm {
         left: 50%
@@ -290,7 +300,9 @@
         width: 10vw;
       }
     }
-    
+     */
+
+    /* main */
     @media screen and (max-width:601px) {
       #popupForm {
         left: 50%
@@ -301,26 +313,28 @@
         left: 10vw;
       }
 
-      .admin img{
+      .admin img {
         width: 80vw;
       }
+
       #animationContainer {
-    left: 15vw;
-    top: 50vh;
-}
+        left: 15vw;
+        top: 50vh;
+      }
 
-.wish {
-    top: 57vh;
-    left: 14vw;
-}
-.agradip img{
-  width: 26vw;
-}
-.agradipjana{
-  top: 85vh;
-}
+      .wish {
+        top: 57vh;
+        left: 14vw;
+      }
+
+      .agradip img {
+        width: 26vw;
+      }
+
+      .agradipjana {
+        top: 85vh;
+      }
     }
-
   </style>
 </head>
 
@@ -354,7 +368,7 @@
   <div class="agradip">
     <img src="logo2.jpg" alt="logo">
   </div>
-  <div class="admin">
+  <div class="newyear">
     <img src="logo.jpg" alt="logo">
   </div>
   <script>
