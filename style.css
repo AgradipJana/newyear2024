@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Yanone+Kaffeesatz&display=swap');
+  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background: url(bg.gif) no-repeat center/cover;
+}
+
+
+canvas {
+  display: block;
+}
+
+#popupForm {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#popupForm input {
+  padding: 10px 30px;
+  border: none;
+  background: #eee;
+  outline: none;
+}
+
+#popupForm button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #202050;
+}
+
+#popupForm button:hover {
+  transition-duration: 1s;
+  background-color: #0f0fa5;
+  cursor: pointer;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+
+.agradip {
+  position: absolute;
+  top: 5vh;
+  left: 3vw;
+}
+
+.agradip img {
+  width: 10vw;
+}
+
+.newyear {
+  position: absolute;
+  top: 0vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.newyear img {
+  width: 35vw;
+  animation: happyNewYearAnimation 2s infinite;
+}
+
+@keyframes happyNewYearAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#animationContainer {
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  top: 62vh;
+  margin: 5px 0;
+}
+
+.happy-new-year {
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Lexend', sans-serif;
+}
+
+.wish {
+  position: absolute;
+  top: 74vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+}
+
+
+.agradipjana {
+  position: absolute;
+  top: 90vh;
+  right: 3vw;
+}
+
+.agradipjana img {
+  width: 4vw;
+  border-radius: 5px;
+}
+
+.agradipjana img:hover {
+  transform: rotate(10deg);
+  animation-duration: 1s;
+}
+
+
+/* @media screen and (max-width:320px) {
+  #popupForm {
+    left: 50%
+  }
+
+  #animationContainer {
+    left: 5vw;
+    top: 55vh
+  }
+
+  .wish {
+    top: 65vh;
+    left: 0vw;
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .admin {
+    top: 20vh;
+    left: 17vw;
+  }
+
+  .admin img {
+    width: 68vw;
+  }
+
+  .agradip img {
+    width: 23vw;
+  }
+
+  .agradipjana img {
+    width: 12vw;
+  }
+}
+
+@media screen and (max-width:376px) {
+  #popupForm {
+    left: 55%
+  }
+
+  #animationContainer {
+    left: 10vw;
+    top: 55vh
+  }
+
+  .wish {
+    top: 65vh;
+    left: 0vw;
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .admin {
+    top: 15vh;
+    left: 17vw;
+  }
+
+  .admin img {
+    width: 68vw;
+  }
+
+  .agradip img {
+    width: 20vw;
+  }
+
+  .agradipjana img {
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width:426px) {
+  #popupForm {
+    left: 55%
+  }
+
+  #animationContainer {
+    left: 17vw;
+    top: 55vh;
+  }
+
+  .wish {
+    top: 65vh;
+    left: 0vw;
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .admin {
+    top: 8vh;
+    left: 17vw;
+  }
+
+  .admin img {
+    width: 68vw;
+  }
+
+  .agradip img {
+    width: 20vw;
+  }
+
+  .agradipjana img {
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width:769px) {
+  #popupForm {
+    left: 50%
+  }
+
+  #animationContainer {
+    left: 30vw;
+    top: 55vh;
+  }
+
+  .wish {
+    top: 67vh;
+    left: 30vw;
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .admin {
+    top: -8vh;
+    left: 25vw;
+  }
+
+  .admin img {
+    width: 50vw;
+  }
+
+  .agradip img {
+    width: 10vw;
+  }
+
+  .agradipjana {
+    top: 80vh;
+  }
+
+  .agradipjana img {
+    width: 10vw;
+  }
+} */
+
+
+/* main */
+@media screen and (max-width:601px) {
+  #popupForm {
+    left: 50%
+  }
+
+  .newyear {
+    top: 27vh;
+  }
+
+  .newyear img {
+    width: 80vw;
+  }
+
+  /* #animationContainer {
+    left: 15vw;
+    top: 50vh;
+  } */
+
+  /* .wish {
+    top: 57vh;
+    left: 14vw;
+  } */
+
+  .agradip img {
+    width: 26vw;
+  }
+
+  .agradipjana {
+    top: 87vh;
+  }
+  .agradipjana img{
+    width: 7vw;
+  }
+}
